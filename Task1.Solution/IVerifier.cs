@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Task1.Solution
 {
-    public class SqlRepository : IRepository
+    public interface IVerifier
     {
-        public void Create(string password) { }
+        Tuple<bool, string> PasswordVerification(string password);
     }
 }

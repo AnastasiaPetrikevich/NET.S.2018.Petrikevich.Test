@@ -10,7 +10,7 @@ namespace Task5.Solution
     {
         public string Text { get; set; }
 
-
+        public abstract void ConvertTo(Converter<string, string> converter);
 
     }
 }
