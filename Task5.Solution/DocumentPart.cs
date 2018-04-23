@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,7 +11,7 @@ namespace Task5.Solution
     {
         public string Text { get; set; }
 
-        public abstract void ConvertTo(Converter<string, string> converter);
+        public abstract string ConvertTo(IConverter converter);
 
     }
 }

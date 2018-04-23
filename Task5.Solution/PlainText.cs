@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Task5.Solution
 {
-    public class BoldText : DocumentPart
+    public class PlainText : DocumentPart
     {
         public override string ConvertTo(IConverter converter)
         {
-            return converter.BoldTextConvert(this.Text);
+            return converter.PlainTextConvert(Text);
         }
     }
 }
