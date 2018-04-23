@@ -34,5 +34,6 @@ namespace Task4
                     throw new ArgumentException("Invalid averagingMethod value");
             }
         }
+
     }
 }
